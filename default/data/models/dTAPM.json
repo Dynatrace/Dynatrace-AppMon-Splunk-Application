@@ -1,0 +1,106 @@
+{
+    "displayName": "dTAPM", 
+    "description": "", 
+    "objectSummary": {
+        "Event-Based": 1, 
+        "Search-Based": 1, 
+        "Transaction-Based": 0, 
+        "Interface Implementations": 0, 
+        "Interfaces": 0
+    }, 
+    "objects": [
+        {
+            "displayName": "Visit", 
+            "calculations": [], 
+            "constraints": [], 
+            "comment": "", 
+            "baseSearch": "sourcetype=\"Visit\" | rename application AS Application, apdex AS Apdex, visitId as VisitId, Converted AS Converted,  \"dimensions.Country of Visits\"  AS Country | table Application, Apdex, VisitId, Converted, Country", 
+            "parentName": "BaseSearch", 
+            "objectName": "Visit", 
+            "fields": [
+                {
+                    "fieldName": "Application", 
+                    "displayName": "Application", 
+                    "comment": "", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "hidden": false, 
+                    "required": false
+                }, 
+                {
+                    "fieldName": "bounce-rate", 
+                    "displayName": "Bounce-rate", 
+                    "comment": "", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "hidden": false, 
+                    "required": false
+                }, 
+                {
+                    "fieldName": "converted", 
+                    "displayName": "Converted", 
+                    "comment": "", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "hidden": false, 
+                    "required": false
+                }, 
+                {
+                    "fieldName": "Country", 
+                    "displayName": "Country", 
+                    "comment": "", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "hidden": false, 
+                    "required": false
+                }, 
+                {
+                    "fieldName": "Apdex", 
+                    "displayName": "Apdex", 
+                    "comment": "", 
+                    "type": "number", 
+                    "multivalue": false, 
+                    "hidden": false, 
+                    "required": false
+                }
+            ]
+        }, 
+        {
+            "displayName": "UserAction", 
+            "calculations": [], 
+            "constraints": [
+                {
+                    "search": "sourcetype=\"pa\" "
+                }
+            ], 
+            "comment": "", 
+            "parentName": "BaseEvent", 
+            "objectName": "UserAction", 
+            "fields": [
+                {
+                    "fieldName": "dimensions.Country of Visits", 
+                    "displayName": "Country", 
+                    "comment": "", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "hidden": false, 
+                    "required": false
+                }, 
+                {
+                    "fieldName": "actionName", 
+                    "displayName": "Name", 
+                    "comment": "", 
+                    "type": "string", 
+                    "multivalue": false, 
+                    "hidden": false, 
+                    "required": false
+                }
+            ]
+        }
+    ], 
+    "modelName": "dTAPM", 
+    "objectNameList": [
+        "Visit", 
+        "UserAction"
+    ]
+}

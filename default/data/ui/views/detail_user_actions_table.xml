@@ -1,0 +1,53 @@
+<form>
+  <label>User Actions Details View</label>
+  <fieldset autoRun="true" submitButton="false">
+    <input type="time" searchWhenChanged="true">
+      <default>
+        <earliestTime>@d</earliestTime>
+        <latestTime>now</latestTime>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <chart>
+      <title>Timeline of User Activity</title>
+      <searchString>index=dynatrace sourcetype="pa"     |
+timechart count by  "dimensions.User Action Source Page Title"  limit=10</searchString>
+      <earliestTime>rt-1m</earliestTime>
+      <latestTime>rt</latestTime>
+      <option name="charting.axisTitleX.text">Time</option>
+      <option name="charting.axisTitleX.visibility">visible</option>
+      <option name="charting.axisTitleY.text">Count</option>
+      <option name="charting.axisTitleY.visibility">visible</option>
+      <option name="charting.axisX.scale">linear</option>
+      <option name="charting.axisY.scale">linear</option>
+      <option name="charting.chart">column</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.chart.style">shiny</option>
+      <option name="charting.drilldown">all</option>
+      <option name="charting.layout.splitSeries">0</option>
+      <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+      <option name="charting.legend.placement">right</option>
+      <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+      <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+      <option name="charting.axisTitleY2.visibility">visible</option>
+      <option name="charting.axisY2.enabled">false</option>
+      <option name="charting.axisY2.scale">inherit</option>
+    </chart>
+  </row>
+  <row>
+    <table>
+      <title>Detail User Actions</title>
+      <searchString>index=dynatrace (sourcetype="pa" OR sourcetype="visit")         | spath "dimensions.Apdex performance zone for User Actions" output=appdex_val        | search appdex_val="satisfied"        | spath "url"        | spath "application"        | spath "actionName"        | rex field=url "(?&lt;site&gt;(?:http://)(?:[a-zA-Z_-]+\.){1,}\w+(?::\d+))\/"        | rex field=url "^(?:http://)(?:[a-zA-Z_-]+\.){1,}\w+(?::\d+)\/(?&lt;page_name&gt;[a-zA-Z\._-]+)(?:/|\?|=|\s|$)"        | rex field=url "^(?:http://)(?:[a-zA-Z_-]+\.){1,}\w+(?::\d+)\/[a-zA-Z\._-]+(?:/|\?|=|\s|$)(?&lt;page_action&gt;[a-zA-Z_-]+)"       | fields  "dimensions.User Action Source Page Title" "dimensions.Country of Visits" appdex_val  url site page_name page_action actionName visitId application        | stats list(url) AS URL list("dimensions.Country of Visits") AS Country list("dimensions.User Action Source Page Title") AS PageName by visitId  application</searchString>
+      <earliestTime>0</earliestTime>
+      <latestTime>now</latestTime>
+      <option name="wrap">true</option>
+      <option name="rowNumbers">false</option>
+      <option name="dataOverlayMode">none</option>
+      <option name="drilldown">row</option>
+      <option name="count">10</option>
+    </table>
+  </row>
+</form>

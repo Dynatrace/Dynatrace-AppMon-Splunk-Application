@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dashboard>
+  <label>Key Analytics Metrics</label>
+  <row>
+    <single>
+      <searchName>Visits Converation Rate Percentage</searchName>
+      <title>Visits Converation Rate Percentage</title>
+      <option name="count">50</option>
+      <option name="displayRowNumbers">true</option>
+    </single>
+    <single>
+      <searchName>Visits Bounce Rate Percentage</searchName>
+      <title>Visits Bounce Rate Percentage</title>
+      <option name="count">50</option>
+      <option name="displayRowNumbers">true</option>
+    </single>
+    <single>
+      <searchName>Visits Duration Average</searchName>
+      <title>Visits Duration Average</title>
+      <option name="count">50</option>
+      <option name="displayRowNumbers">true</option>
+    </single>
+  </row>
+  <row>
+    <chart>
+      <searchName>Visits Bounce Rate</searchName>
+      <title>Visits Bounce Rate</title>
+      <option name="charting.chart">bar</option>
+    </chart>
+  </row>
+  <row>
+    <chart>
+      <searchName>Visits Bounce Rate Histogram</searchName>
+      <title>Visits Bounce Rate Histogram</title>
+      <option name="charting.axisTitleX.text">Timeline</option>
+      <option name="charting.chart">column</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.layout.splitSeries">false</option>
+      <option name="charting.legend.placement">right</option>
+      <option name="charting.primaryAxisTitle.text"></option>
+    </chart>
+  </row>
+  <row>
+    <chart>
+      <searchName>Visits by Client Type</searchName>
+      <title>Visits by Client Type</title>
+      <option name="charting.chart">bar</option>
+    </chart>
+    <chart>
+      <searchName>Visits by Client Family</searchName>
+      <title>Visits by Client Family</title>
+      <option name="charting.chart">bar</option>
+    </chart>
+  </row>
+</dashboard>

@@ -1,0 +1,135 @@
+<dashboard>
+  <label>Application At a Glance</label>
+  <row>
+    <single>
+      <title>Visitors</title>
+      <searchName>Overview: Unique Visits</searchName>
+      <option name="afterLabel">Unique Visits</option>
+      <option name="linkView">search</option>
+    </single>
+    <single>
+      <title>Transactions</title>
+      <searchName>Overview: Total Transactions</searchName>
+      <option name="afterLabel">Unique Transactions</option>
+      <option name="linkView">search</option>
+    </single>
+    <single>
+      <searchName>Overview: Response Time</searchName>
+      <title>Application Response Time</title>
+      <option name="afterLabel">Avg Response Time (sec)</option>
+      <option name="linkView">search</option>
+    </single>
+  </row>
+  <row>
+    <table>
+      <title>Transaction Metrics</title>
+      <searchName>Overview: Key Transactions</searchName>
+      <option name="dataOverlayMode">none</option>
+      <option name="displayRowNumbers">true</option>
+      <option name="wrap">true</option>
+      <option name="rowNumbers">false</option>
+      <option name="drilldown">row</option>
+      <option name="list.drilldown">full</option>
+      <option name="list.wrap">1</option>
+      <option name="maxLines">5</option>
+      <option name="raw.drilldown">full</option>
+      <option name="table.drilldown">1</option>
+      <option name="table.wrap">1</option>
+      <option name="type">list</option>
+      <option name="count">10</option>
+    </table>
+    <table>
+      <title>Visitor Metrics</title>
+      <searchName>Overview: Visitors</searchName>
+      <option name="wrap">true</option>
+      <option name="rowNumbers">false</option>
+      <option name="dataOverlayMode">none</option>
+      <option name="drilldown">cell</option>
+      <option name="count">10</option>
+    </table>
+  </row>
+  <row>
+    <chart>
+      <title>Apdex Coefficient</title>
+      <searchName>Overview: Apdex Coeficient</searchName>
+      <option name="afterLabel"/>
+      <option name="beforeLabel">Appdex Coeficient:</option>
+      <option name="charting.chart">radialGauge</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.rangeValues">[0,0.5,0.75,1]</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.chart.style">minimal</option>
+      <option name="charting.gaugeColors">[0xd13b3b,0xebe42d,0x7e9f44]</option>
+      <option name="charting.layout.splitSeries">0</option>
+      <option name="charting.legend.placement">top</option>
+      <option name="count">10</option>
+      <option name="displayRowNumbers">true</option>
+      <option name="charting.axisTitleX.visibility">visible</option>
+      <option name="charting.axisTitleY.visibility">visible</option>
+      <option name="charting.axisX.scale">linear</option>
+      <option name="charting.axisY.scale">linear</option>
+      <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+      <option name="charting.drilldown">all</option>
+      <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+    </chart>
+    <chart>
+      <searchName>Overview: Apdex Performance Zone for User Actions Histogram</searchName>
+      <title>Apdex Performance Histogram</title>
+      <option name="charting.axisLabelsY">category</option>
+      <option name="charting.axisTitleX.text">Time</option>
+      <option name="charting.axisVisibility">hide</option>
+      <option name="charting.axisY.scale">log</option>
+      <option name="charting.chart">column</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.fieldColors">{"satisfied":0xB3EFB3,"tolerating":0xF8E275,"frustrated":0xF87575}</option>
+      <option name="charting.layout.splitSeries">false</option>
+      <option name="charting.legend.placement">top</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxis.scale">log</option>
+      <drilldown>
+        <link series="tolerating">/app/APM_dynatrace/action_details?form.appdex_val=tolerating&amp;earliest=$earliest$&amp;latest=$latest$</link>
+        <link series="satisfied">/app/APM_dynatrace/action_details?form.appdex_val=satisfied&amp;earliest=$earliest$&amp;latest=$latest$</link>
+        <link series="frustrated">/app/APM_dynatrace/action_details?form.appdex_val=frustrated&amp;earliest=$earliest$&amp;latest=$latest$</link>
+      </drilldown>
+    </chart>
+  </row>
+  <row>
+    <table>
+      <searchName>Overview: Apdex by Application</searchName>
+      <title>Apdex by Application</title>
+      <format type="sparkline" field="sparkline">
+        <option name="height">30</option>
+        <option name="type">bar</option>
+      </format>
+    </table>
+  </row>
+  <row>
+    <chart>
+      <title>Apdex Performance Zone for User Actions</title>
+      <searchName>Overview: Apdex Performance Zone for User Actions</searchName>
+      <option name="charting.chart">bar</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.fieldColors">{"satisfied":0xB3EFB3,"tolerating":0xF8E275,"frustrated":0xF87575}</option>
+      <option name="charting.layout.splitSeries">0</option>
+      <option name="charting.legend.placement">top</option>
+      <option name="charting.myBrush.alpha">0.5</option>
+      <option name="count">10</option>
+      <option name="displayRowNumbers">true</option>
+      <drilldown>
+        <link series="tolerating">/app/APM_dynatrace/action_details?form.appdex_val=tolerating</link>
+        <link series="satisfied">/app/APM_dynatrace/action_details?form.appdex_val=satisfied</link>
+        <link series="frustrated">/app/APM_dynatrace/action_details?form.appdex_val=frustrated</link>
+      </drilldown>
+      <option name="charting.axisTitleX.visibility">visible</option>
+      <option name="charting.axisTitleY.visibility">visible</option>
+      <option name="charting.axisX.scale">linear</option>
+      <option name="charting.axisY.scale">linear</option>
+      <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+      <option name="charting.chart.style">shiny</option>
+      <option name="charting.drilldown">all</option>
+      <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+    </chart>
+  </row>
+</dashboard>

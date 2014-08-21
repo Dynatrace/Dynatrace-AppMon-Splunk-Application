@@ -1,0 +1,18 @@
+<nav>
+    <view name="application_at_a_glance" default="true" />
+    <view name="visits_on_a_map"/>  
+    <view name="key_analytics_metrics"/>
+    <collection label="App Details">
+        <view name="action_details"/>
+        <view name="detail_user_actions_table"/>
+        <view name="detail_transactions_table"/>
+    </collection>
+    <collection label="Searches &amp; Reports">
+        <collection label="Reports">
+            <saved source="unclassified" match="report" />
+        </collection>
+        <divider />
+        <saved source="unclassified" />
+    </collection>
+    <view name="about_dashboard"/>
+</nav>

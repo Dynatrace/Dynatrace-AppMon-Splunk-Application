@@ -1,0 +1,7 @@
+[inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FAPM_dynatrace%2Fbin%2FrunDashboard.py]
+version = 6.1.1
+modtime = 1404915762.945993000
+
+[views/visits_on_a_map]
+version = 6.1.1
+modtime = 1404916890.588635000

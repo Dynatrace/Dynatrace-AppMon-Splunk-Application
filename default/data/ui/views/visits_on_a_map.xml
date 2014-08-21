@@ -1,0 +1,166 @@
+<view autoCancelInterval="90" isVisible="true" objectMode="SimpleDashboard" onunloadCancelJobs="true" refresh="-1" template="dashboard.html" stylesheet="application.css">
+  <label>Visits On a Map</label>
+  <module name="AccountBar" layoutPanel="appHeader"/>
+  <module name="AppBar" layoutPanel="navigationHeader"/>
+  <module name="Message" layoutPanel="messaging">
+    <param name="maxSize">1</param>
+    <param name="clearOnJobDispatch">False</param>
+    <param name="filter">*</param>
+  </module>
+  <module name="DashboardTitleBar" layoutPanel="viewHeader"/>
+  <module name="Message" layoutPanel="navigationHeader">
+    <param name="maxSize">1</param>
+    <param name="clearOnJobDispatch">True</param>
+    <param name="filter">splunk.search.job</param>
+    <param name="level">warn</param>
+  </module>
+ <module name="StaticContentSample" layoutPanel="viewHeader">
+   <param name="text"><![CDATA[Note: This page requires <a href=http://apps.splunk.com/app/368/> Google Maps </a>  and <a href=http://apps.splunk.com/app/291>MaxMind GeoIP Lookup</a>]]></param>
+ </module>
+  <module name="HiddenSavedSearch" layoutPanel="panel_row1_col1" group="Visitors Across the Globe - Today" autoRun="true">
+    <param name="savedSearch">User Analytics: Visit by Client IP</param>
+    <module name="GoogleMaps" group="Visitors Across the Globe - Today" layoutPanel="panel_row1_col1">
+      <param name="height">500px</param>
+      <param name="center"/>
+      <param name="scrollwheel">off</param>
+      <param name="mapStyles">splunk,roadmap,terrain,satellite</param>
+      <param name="mapType">roadmap</param>
+      <param name="drilldown">true</param>
+      <param name="overlay">clusters</param>
+      <param name="overlay.style">m</param>
+      <param name="overlay.opacity">0.75</param>
+      <param name="overlay.rangeMap">0, 100, 500, 1000, 10000</param>
+      <param name="overlay.roundQuantity">true</param>
+      <param name="zoomLevel">4</param>
+      <module name="SimpleResultsHeader" layoutPanel="panel_row1_col1">
+        <param name="entityName">results</param>
+        <param name="headerFormat">$gmapTotalCount$ results with location information ( $gmapLocationCount$ distinct locations ) $time$</param>
+      </module>
+      <module name="GeoDrilldown" layoutPanel="panel_row1_col1">
+     	<module name="ViewRedirector">
+        	<param name="viewTarget">flashtimeline</param>
+            <param name="popup">true</param>
+		</module>
+	  </module>
+    </module>
+  </module>
+  <module name="HiddenSavedSearch" layoutPanel="panel_row2_col1" group="Conversions by Country" autoRun="true">
+    <param name="savedSearch">Conversions by Countries for Top Countries Dashboard</param>
+    <module name="HiddenChartFormatter" group="Chart" layoutPanel="panel_row2_col1">
+      <param name="charting.seriesColors">[0xFF0000,0xFFFF00,0x00FF00]</param>
+      <param name="chartTitle">Conversion by Countries</param>
+      <param name="charting.axisTitleX.text">Countries</param>
+      <param name="charting.axisTitleY.text">Visits by Conversion</param>
+      <param name="charting.chart">column</param>
+      <param name="charting.chart.stackMode">stacked</param>
+      <param name="charting.primaryAxisTitle.text">Countries</param>
+      <param name="charting.secondaryAxisTitle.text">Visits by Conversion</param>
+      <module name="JSChart">
+        <param name="width">100%</param>
+        <param name="height">200px</param>
+        <module name="ConvertToDrilldownSearch">
+          <module name="ViewRedirector">
+            <param name="viewTarget">flashtimeline</param>
+          </module>
+        </module>
+      </module>
+    </module>
+  </module>
+  
+  <module name="HiddenSavedSearch" layoutPanel="panel_row3_col1" group="Top Landing Pages with Conversion Rate" autoRun="True">
+    <param name="groupLabel">Top Landing Pages with Conversion Rate</param>
+    <param name="savedSearch">Top Landing Pages with Conversion Rate</param>
+    <module name="ViewstateAdapter">
+      <param name="suppressionList"/>
+      <param name="savedSearch">Top Landing Pages with Conversion Rate</param>
+      <module name="HiddenFieldPicker">
+        <param name="strictMode">True</param>
+        <module name="JobProgressIndicator"/>
+        <module name="Paginator">
+          <param name="entityName">results</param>
+          <param name="count">10</param>
+          <module name="EnablePreview">
+            <param name="enable">True</param>
+            <param name="display">False</param>
+            <module name="SimpleResultsTable">
+              <param name="entityName">results</param>
+              <param name="dataOverlayMode">highlow</param>
+              <param name="displayRowNumbers">true</param>              
+              <param name="fieldFormats">
+                <param name="sparkline">
+                  <list>
+                    <param name="options">
+                      <param name="height">30</param>
+                      <param name="type">bar</param>
+                    </param>
+                    <param name="type">sparkline</param>
+                  </list>
+                </param>
+              </param>
+              <param name="allowTransformedFieldSelect">True</param>
+              <param name="drilldown">row</param>
+              <module name="Gimp"/>
+              <module name="ConvertToDrilldownSearch">
+                <module name="ViewRedirector">
+                  <param name="viewTarget">flashtimeline</param>
+                </module>
+              </module>
+            </module>
+            <module name="ViewRedirectorLink">
+              <param name="viewTarget">flashtimeline</param>
+            </module>
+          </module>
+        </module>
+      </module>
+    </module>
+  </module>
+  	<module name="HiddenSavedSearch" layoutPanel="panel_row4_col1" group="Top Exit Page with Exit Percentage and Conversion" autoRun="True">
+	<param name="groupLabel">Top Exit Page with Exit Percentage and Conversion</param>
+	<param name="savedSearch">Top Exit Page with Exit Percentage and Conversion</param>
+	<module name="ViewstateAdapter">
+	  <param name="suppressionList"/>
+	  <param name="savedSearch">Top Exit Page with Exit Percentage and Conversion</param>
+			<module name="HiddenFieldPicker">
+				<param name="strictMode">True</param>
+				<module name="JobProgressIndicator"/>
+				<module name="Paginator">
+					<param name="entityName">results</param>
+					<param name="count">10</param>
+					<module name="EnablePreview">
+						<param name="enable">True</param>
+						<param name="display">False</param>
+						<module name="SimpleResultsTable">
+							<param name="entityName">results</param>
+							<param name="dataOverlayMode">highlow</param>
+							<param name="displayRowNumbers">true</param>
+							<param name="fieldFormats">
+								<param name="sparkline">
+									<list>
+										<param name="options">
+										  <param name="height">30</param>
+										  <param name="type">bar</param>
+										</param>
+										<param name="type">sparkline</param>
+									</list>
+								</param>
+							</param>
+							<param name="allowTransformedFieldSelect">True</param>
+							<param name="drilldown">row</param>
+							<module name="Gimp"/>
+							<module name="ConvertToDrilldownSearch">
+								<module name="ViewRedirector">
+								  <param name="viewTarget">flashtimeline</param>
+								</module>
+							</module>
+						</module>
+						<module name="ViewRedirectorLink">
+						  <param name="viewTarget">flashtimeline</param>
+						</module>
+					</module>
+				</module>
+		</module>
+	</module> 
+  </module>
+
+</view>
+  
