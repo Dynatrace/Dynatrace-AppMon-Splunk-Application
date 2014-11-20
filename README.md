@@ -13,7 +13,7 @@
         <div class="block">
             <div id="117440771" class="content column span-18 last">
     <p>
-            <img  height="20px" src="images_community/download/attachments/25789254/logo_splunk_white_high.png" alt="images_community/download/attachments/25789254/logo_splunk_white_high.png" class="confluence-embedded-image image-left" >dynatrace App for Splunk 
+            <img  height="40px" src="images_community/download/attachments/25789254/logo_splunk_white_high.png" alt="images_community/download/attachments/25789254/logo_splunk_white_high.png" class="confluence-embedded-image image-left" >dynatrace App for Splunk 
 =========================
 </img>
             </p>
