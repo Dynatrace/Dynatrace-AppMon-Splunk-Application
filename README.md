@@ -111,3 +111,38 @@ Drill-down to root-cause, export &amp; share with your team    </p>
 
 </body>
 </html>
+<div >
+    <h2>Prerequisites</h2>
+    <p>You will need dynaTrace 5.5 with enabled Business Transaction Export. You will also need a recent version of Splunk, this Application has been tested with Splunk 6 Windows and Linux! You Splunk box needs to have Java 6 or higher installed.    </p>
+</div>
+    
+<div class="section-2"  id="117440771_SplunkApplication-QuickStartGuide-ThreeEasySteps"  >
+    <h2>Quick Start Guide - Three Easy Steps</h2>
+
+<div class="section-3"  id="117440771_SplunkApplication-Step1%3AInstalltheSplunkAppfromtheAppStore"  >
+    <h3>Step 1: Install the Splunk App from the App Store</h3>
+    <p>Download the APM_dynaTrace file from the attachments or from the Splunk Store <a href="http://apps.splunk.com/app/1593/">http://apps.splunk.com/app/1593/</a>    </p>
+    <p>Open Splunk, Click on Splunk Icon -&gt; Manage Apps and Install app from file.    </p>
+</div>
+
+<div class="section-3"  id="117440771_SplunkApplication-Step2%3AEnableBusinessTransactionsFeed"  >
+    <h3>Step 2: Enable Business Transactions Feed</h3>    
+    <p>Open dynaTrace Client -&gt; Server Settings -&gt; (Export) Business Transaction Feeds    </p>
+    <p>Insert the URL of the Flume (Splunk) server. The default port of the flume server running on the Splunk server is 4321    </p>
+    <p><img src="images_community/download/attachments/117440771/6.PNG" alt="images_community/download/attachments/117440771/6.PNG" class="" /> </p>
+ </div>
+    
+ <div class="section-3"  id="117440771_SplunkApplication-Step3%3AExportBusinessTransactions"  >
+    <h3>Step 3: Export Business Transactions</h3>
+    <p><span style="color: #505050;"></span>Select the Business Transactions you would like to export, edit the Business Transaction and select export results.    </p>
+    <p><img src="images_community/download/attachments/117440771/splunk5.png" alt="images_community/download/attachments/117440771/splunk5.png" class="" />
+    </p>
+    <p>
+    </p>
+    <p><i class=" ">Good Luck, you should start seeing data in dynaTrace App for Splunk</i>    </p>
+    <p>
+    </p>
+ </div>
+    
+ </div>
+ 
