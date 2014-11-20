@@ -39,9 +39,8 @@ Launch the Dynatrace client for a single transactions and alerts from within <a 
 Drill-down to root-cause, export &amp; share with your team    </p>
 </li></ul>    <div class="section-2"  id="117440771_SplunkApplication-LibraryDetails"  >
         <h2>Library Details</h2>
-    
-
-        <table>
+<div>
+<table>
             <thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" ">    
             <tr>
                <td rowspan="1" colspan="1"><p>Name    </p></td>
@@ -86,15 +85,13 @@ Drill-down to root-cause, export &amp; share with your team    </p>
             </tr>
         </tbody>        
         </table>
+</div>
 
     
     <div class="section-2"  id="117440771_SplunkApplication-ReleaseNotesv2.1"  >
         <h2>Release Notes v 2.1</h2>
-    
-    <p>
-In this release we have changed the startup script of flume server and the input scripts for Splunk. We use python scripts which are platform independent. You will see only three scripts runFlume.py, runDashboard.py and cleanFlume.py in this version which replaces all the previous bat/sh/curl scripts and processes    </p>
-    <p>
-In case you are using the Google Maps Plugin, there are some config / permission issues with the GeoLiteData.dat file which may not allow you to use the maps view with this app. But you can install the Google Maps Plugin and search within that App context for dynaTrace visits.    </p>
+    <p>In this release we have changed the startup script of flume server and the input scripts for Splunk. We use python scripts which are platform independent. You will see only three scripts runFlume.py, runDashboard.py and cleanFlume.py in this version which replaces all the previous bat/sh/curl scripts and processes    </p>
+    <p>In case you are using the Google Maps Plugin, there are some config / permission issues with the GeoLiteData.dat file which may not allow you to use the maps view with this app. But you can install the Google Maps Plugin and search within that App context for dynaTrace visits.    </p>
     <p>
     <span style="color: #505050;">
 Release Notes v 2.0    </span>
