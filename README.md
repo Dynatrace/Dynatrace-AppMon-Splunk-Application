@@ -88,46 +88,33 @@ Drill-down to root-cause, export &amp; share with your team    </p>
 </div>
 
     
-    <div class="section-2"  id="117440771_SplunkApplication-ReleaseNotesv2.1"  >
+    <div class="section-2">
         <h2>Release Notes v 2.1</h2>
-    <p>In this release we have changed the startup script of flume server and the input scripts for Splunk. We use python scripts which are platform independent. You will see only three scripts runFlume.py, runDashboard.py and cleanFlume.py in this version which replaces all the previous bat/sh/curl scripts and processes    </p>
-    <p>In case you are using the Google Maps Plugin, there are some config / permission issues with the GeoLiteData.dat file which may not allow you to use the maps view with this app. But you can install the Google Maps Plugin and search within that App context for dynaTrace visits.    </p>
-    <p>
-    <span style="color: #505050;">
-Release Notes v 2.0    </span>
-    </p>
-    <p>
-The dynaTrace , Splunk App Version 2.0 is available on the Splunk App Store <a href="http://apps.splunk.com/app/1593/">http://apps.splunk.com/app/1593/</a>    </p>
-    <p>
-V 2.0 has major changes in the OOB Dashboards which are populated with APM data from dynaTrace.<br/><br/>Application at Glance : Gives you at glance view of the Applications, Visitors and Critical Transactions    </p>
-    <p>
-    </p>
-    <p>
-            <img src="images_community/download/attachments/117440771/1.PNG" alt="images_community/download/attachments/117440771/1.PNG" class="" />
-            </p>
-    <p>
-    </p>
-    <p>
-Visitors on a Map: Gives you a geographical view of your visitors, with the ability to zero on a single visit    </p>
-    <p>
-    </p>
-    <p>
+        <p>In this release we have changed the startup script of flume server and the input scripts for Splunk. We use python scripts which are platform independent. You will see only three scripts runFlume.py, runDashboard.py and cleanFlume.py in this version which replaces all the previous bat/sh/curl scripts and processes    </p>
+        <p>In case you are using the Google Maps Plugin, there are some config / permission issues with the GeoLiteData.dat file which may not allow you to use the maps view with this app. But you can install the Google Maps Plugin and search within that App context for dynaTrace visits.    </p>
+    </div>
+    
+    <div>
+        <h2>Release Notes v 2.0    </h2>
+        <p>The dynaTrace , Splunk App Version 2.0 is available on the Splunk App Store <a href="http://apps.splunk.com/app/1593/">http://apps.splunk.com/app/1593/</a>    </p>
+        <p>V 2.0 has major changes in the OOB Dashboards which are populated with APM data from dynaTrace.
+        Application at Glance : Gives you at glance view of the Applications, Visitors and Critical Transactions    </p>
+        <p><img src="images_community/download/attachments/117440771/1.PNG" alt="images_community/download/attachments/117440771/1.PNG" class="" />
+        </p>
+        <p>Visitors on a Map: Gives you a geographical view of your visitors, with the ability to zero on a single visit    </p>
+        <p>
             <img src="images_community/download/attachments/117440771/2.PNG" alt="images_community/download/attachments/117440771/2.PNG" class="" />
         </p>
-    <p>
-    </p>
-    <p>
+        <p>
 Key Analytic Metrics: Allows you to share analysis APM data for business analysis and effectiveness of your web/app properties    </p>
-    <p>
+        <p>
             <img src="images_community/download/attachments/117440771/3.0.PNG" alt="images_community/download/attachments/117440771/3.0.PNG" class="" />
-            </p>
-    <p>
-Transaction Activity Data and User Activity Data: Gives you a timeline view of your transactions, so you can understand at what time of the day certain transactions are heavily used or not.    </p>
-    <p>
+        </p>
+        <p>Transaction Activity Data and User Activity Data: Gives you a timeline view of your transactions, so you can understand at what time of the day certain transactions are heavily used or not.    </p>
+        <p>
             <img src="images_community/download/attachments/117440771/4.PNG" alt="images_community/download/attachments/117440771/4.PNG" class="" />
         </p>
-    <p>
-The Splunk App also has a pivot data model to start with, which an be used to create models around User Activity, Visits and Transaction Health and leverage the Splunk platform for Analysis.<br/><br/>The Splunk App for Linux platform has a cleanup script to clean the log files once they have been ingested.    </p>
+        <p>The Splunk App also has a pivot data model to start with, which an be used to create models around User Activity, Visits and Transaction Health and leverage the Splunk platform for Analysis.The Splunk App for Linux platform has a cleanup script to clean the log files once they have been ingested.    </p>
     </div>
     
     <div class="section-2"  id="117440771_SplunkApplication-Prerequisites"  >
