@@ -316,11 +316,4 @@ In both cases the dynaTrace client must be already running on your local machine
 <p>
 If you have questions or ideas for this Splunk Application please post it in our <a href="https://community/display/DTFORUM/Community+Plugins+and+Extensions">Plugin Forum</a>    </p>
 </div>
-
-        </div>
-    </div>
-
-    <div class="footer">
-        Created with <a href="http://k15t.com/display/en/Scroll-Wiki-HTML-Exporter-for-Confluence-Overview">Scroll Wiki HTML Exporter for Confluence</a>.
-    </div>
 </div>
