@@ -58,8 +58,12 @@ Drill-down to root-cause, export &amp; share with your team    </p>
             </tr>
             <tr>
                <td rowspan="1" colspan="1"><p>Authors    </p></td>
-               <td rowspan="1" colspan="1"><p>Rajesh Jain (Owner)</p>
-Michael Kopp<br/>Yiaochung Lee and Wilson Lai (initial splunk application) ,<br/>Ardeshir Arfaian (initial splunk alert),<br/>Peter Kaiser (<a href="https://community/display/DL/Big+Data+Business+Transaction+Bridge">Big Data Business Transaction Bridge</a> used internally by the Splunk Application)    </p>
+               <td rowspan="1" colspan="1">
+                  <p>Rajesh Jain (Owner)</p>
+                  <p>Michael Kopp</p>
+                  <p>Yiaochung Lee and Wilson Lai (initial splunk application) ,</p>
+                  <p>Ardeshir Arfaian (initial splunk alert),</p>
+                  <p>Peter Kaiser (<a href="https://community/display/DL/Big+Data+Business+Transaction+Bridge">Big Data Business Transaction Bridge</a> used internally by the Splunk Application)    </p>
                </td>
             </tr>
             <tr>
