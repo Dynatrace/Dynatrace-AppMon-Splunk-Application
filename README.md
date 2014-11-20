@@ -79,8 +79,9 @@ Drill-down to root-cause, export &amp; share with your team    </p>
             <tr>
                 <td rowspan="1" colspan="1"><p>Contents    </p></td>
                 <td rowspan="1" colspan="1">
-                <p>
-<a href="attachments_173801608_1_APM_dynatrace.tar.gz">dynaTrace App for Splunk</a><br/><a href="attachments_117833759_2_com.compuware.splunkintegration_1.0.0.jar">DynaTrace Splunk Alert Plugin</a><br/><a href="attachments_122322946_1_Splunk_Business_Transactions.profile.xml">Splunk Business Transactions template profile</a>                    </p>
+                <p><a href="attachments_173801608_1_APM_dynatrace.tar.gz">dynaTrace App for Splunk</a></p>
+                <p><a href="attachments_117833759_2_com.compuware.splunkintegration_1.0.0.jar">DynaTrace Splunk Alert Plugin</a></p>
+                <p><a href="attachments_122322946_1_Splunk_Business_Transactions.profile.xml">Splunk Business Transactions template profile</a></p>
                 </td>
             </tr>
         </tbody>        
