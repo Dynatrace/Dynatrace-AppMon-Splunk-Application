@@ -42,78 +42,45 @@ Drill-down to root-cause, export &amp; share with your team    </p>
     
     <div class="tablewrap">
         <table>
-<thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" ">    <tr>
-            <td rowspan="1" colspan="1">
-        <p>
-Name    </p>
-            </td>
-                <td rowspan="1" colspan="1">
-        <p>
-<strong class=" ">dynatrace Splunk Application</strong>    </p>
-            </td>
-        </tr>
-    <tr>
-            <td rowspan="1" colspan="1">
-        <p>
-Version    </p>
-            </td>
-                <td rowspan="1" colspan="1">
-        <p>
-2.1    </p>
-            </td>
-        </tr>
-    <tr>
-            <td rowspan="1" colspan="1">
-        <p>
-dynaTrace Version    </p>
-            </td>
-                <td rowspan="1" colspan="1">
-        <p>
-5.5+    </p>
-            </td>
-        </tr>
-    <tr>
-            <td rowspan="1" colspan="1">
-        <p>
-Authors    </p>
-            </td>
-                <td rowspan="1" colspan="1">
-        <p>Rajesh Jain (Owner)<br/>
+            <thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" ">    
+            <tr>
+               <td rowspan="1" colspan="1"><p>Name    </p></td>
+               <td rowspan="1" colspan="1"><p><strong class=" ">dynatrace Splunk Application</strong>    </p></td>
+            </tr>
+            <tr>
+               <td rowspan="1" colspan="1"><p>Version    </p></td>
+               <td rowspan="1" colspan="1"><p>2.1    </p></td>
+            </tr>
+            <tr>
+               <td rowspan="1" colspan="1"><p>dynaTrace Version    </p></td>
+               <td rowspan="1" colspan="1"><p>5.5+    </p></td>
+            
+            </tr>
+            <tr>
+               <td rowspan="1" colspan="1"><p>Authors    </p></td>
+               <td rowspan="1" colspan="1"><p>Rajesh Jain (Owner)<br/>
 Michael Kopp<br/>Yiaochung Lee and Wilson Lai (initial splunk application) ,<br/>Ardeshir Arfaian (initial splunk alert),<br/>Peter Kaiser (<a href="https://community/display/DL/Big+Data+Business+Transaction+Bridge">Big Data Business Transaction Bridge</a> used internally by the Splunk Application)    </p>
-            </td>
-        </tr>
-    <tr>
-            <td rowspan="1" colspan="1">
-        <p>
-License    </p>
-            </td>
+               </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1"><p>License    </p></td>
+                <td rowspan="1" colspan="1"><p><a href="attachments_5275722_2_dynaTraceBSD.txt">dynatrace BSD</a>    </p>   
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1"><p>Support    </p></td>
+                <td rowspan="1" colspan="1"><p><a href="https://community/display/DL/Support+Levels#SupportLevels-Community">Not Supported </a>    </p>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1" colspan="1"><p>Contents    </p></td>
                 <td rowspan="1" colspan="1">
-        <p>
-<a href="attachments_5275722_2_dynaTraceBSD.txt">dynatrace BSD</a>    </p>
-            </td>
-        </tr>
-    <tr>
-            <td rowspan="1" colspan="1">
-        <p>
-Support    </p>
-            </td>
-                <td rowspan="1" colspan="1">
-        <p>
-<a href="https://community/display/DL/Support+Levels#SupportLevels-Community">Not Supported </a>    </p>
-            </td>
-        </tr>
-    <tr>
-            <td rowspan="1" colspan="1">
-        <p>
-Contents    </p>
-            </td>
-                <td rowspan="1" colspan="1">
-        <p>
-<a href="attachments_173801608_1_APM_dynatrace.tar.gz">dynaTrace App for Splunk</a><br/><a href="attachments_117833759_2_com.compuware.splunkintegration_1.0.0.jar">DynaTrace Splunk Alert Plugin</a><br/><a href="attachments_122322946_1_Splunk_Business_Transactions.profile.xml">Splunk Business Transactions template profile</a>    </p>
-            </td>
-        </tr>
-</tbody>        </table>
-            </div>
+                <p>
+<a href="attachments_173801608_1_APM_dynatrace.tar.gz">dynaTrace App for Splunk</a><br/><a href="attachments_117833759_2_com.compuware.splunkintegration_1.0.0.jar">DynaTrace Splunk Alert Plugin</a><br/><a href="attachments_122322946_1_Splunk_Business_Transactions.profile.xml">Splunk Business Transactions template profile</a>                    </p>
+                </td>
+            </tr>
+        </tbody>        
+        </table>
     </div>
     
     <div class="section-2"  id="117440771_SplunkApplication-ReleaseNotesv2.1"  >
