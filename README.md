@@ -1,6 +1,4 @@
 
-dynatrace App for Splunk 
-=========================
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link type="text/css" rel="stylesheet" href="css/blueprint/liquid.css" media="screen, projection"/>
@@ -15,7 +13,9 @@ dynatrace App for Splunk
         <div class="block">
             <div id="117440771" class="content column span-18 last">
     <p>
-            <img  height="100px" src="images_community/download/attachments/25789254/logo_splunk_white_high.png" alt="images_community/download/attachments/25789254/logo_splunk_white_high.png" class="confluence-embedded-image image-left" />
+            <img  height="100px" src="images_community/download/attachments/25789254/logo_splunk_white_high.png" alt="images_community/download/attachments/25789254/logo_splunk_white_high.png" class="confluence-embedded-image image-left" >dynatrace App for Splunk 
+=========================
+</img>
             </p>
     <p>
 This Application enables a seamless way to store Business Transactions and Alerts in Splunk for further analysis by correlating your Splunk data with dynatrace Business Transaction data.    </p>
