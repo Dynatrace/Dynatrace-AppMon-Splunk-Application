@@ -40,7 +40,7 @@ Drill-down to root-cause, export &amp; share with your team    </p>
 </li></ul>    <div class="section-2"  id="117440771_SplunkApplication-LibraryDetails"  >
         <h2>Library Details</h2>
     
-    <div class="tablewrap">
+
         <table>
             <thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" ">    
             <tr>
@@ -86,7 +86,7 @@ Drill-down to root-cause, export &amp; share with your team    </p>
             </tr>
         </tbody>        
         </table>
-    </div>
+
     
     <div class="section-2"  id="117440771_SplunkApplication-ReleaseNotesv2.1"  >
         <h2>Release Notes v 2.1</h2>
