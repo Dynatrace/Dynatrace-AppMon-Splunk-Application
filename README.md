@@ -17,6 +17,7 @@ Splunk Application
     <link type="text/css" rel="stylesheet" href="css/screen.css" media="screen, projection"/>
     <link type="text/css" rel="stylesheet" href="css/print.css" media="print"/>
 </head>
+
 <body>
     <div class="container" style="min-width: 760px;">
         <div class="block">
