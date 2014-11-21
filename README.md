@@ -62,7 +62,7 @@ Drill-down to root-cause, export &amp; share with your team    </p>
                   <p>Michael Kopp</p>
                   <p>Yiaochung Lee and Wilson Lai (initial splunk application) ,</p>
                   <p>Ardeshir Arfaian (initial splunk alert),</p>
-                  <p>Peter Kaiser (<a href="https://community/display/DL/Big+Data+Business+Transaction+Bridge">Big Data Business Transaction Bridge</a> used internally by the Splunk Application)    </p>
+                  <p>Peter Kaiser (<a href="https://community.compuwareapm.com/community/display/DL/Big+Data+Business+Transaction+Bridge">Big Data Business Transaction Bridge</a> used internally by the Splunk Application)    </p>
                </td>
             </tr>
             <tr>
@@ -72,7 +72,7 @@ Drill-down to root-cause, export &amp; share with your team    </p>
             </tr>
             <tr>
                 <td rowspan="1" colspan="1"><p>Support    </p></td>
-                <td rowspan="1" colspan="1"><p><a href="https://community/display/DL/Support+Levels#SupportLevels-Community">Not Supported </a>    </p>
+                <td rowspan="1" colspan="1"><p><a href="https://community.compuwareapm.com/display/DL/Support+Levels#SupportLevels-Community">Not Supported </a>    </p>
                 </td>
             </tr>
             <tr>
@@ -155,7 +155,7 @@ Drill-down to root-cause, export &amp; share with your team    </p>
 <p>
 Use the Splunk Web UI to install the APM with dynaTrace Splunk Application. You can simply install the <a href="Splunk_Application.html">APM with Dynatrace Splunk App</a> as is. Once ready the app will begin listening for data on the designated host inside 5 minutes after install.    </p>
 <p>
-The Splunk Application contains the <a href="https://community/display/DL/Big+Data+Business+Transaction+Bridge">Big Data Business Transaction Bridge</a> with a specialized flume configuration. You can edit it by going to <i class=" ">$SPLUNK_HOME/etc/apps/<i class=" ">APM_dynatrace</i>/bin</i>. Per default it will listen on port 4321, which you can change. It will write the data to the log directory in the application folder.    </p>
+The Splunk Application contains the <a href="https://community.compuwareapm.com/display/DL/Big+Data+Business+Transaction+Bridge">Big Data Business Transaction Bridge</a> with a specialized flume configuration. You can edit it by going to <i class=" ">$SPLUNK_HOME/etc/apps/<i class=" ">APM_dynatrace</i>/bin</i>. Per default it will listen on port 4321, which you can change. It will write the data to the log directory in the application folder.    </p>
 </div>
 
 <div class="section-3"  id="117440771_SplunkApplication-AdaptLogdirectoryandconfigurecleanup"  >
@@ -183,7 +183,7 @@ One appropriate directory on a Linux system would be <i class=" ">/var/log/dynat
     <h3>Enable Business Transaction Feed</h3>
 
 <p>
-See <a href="https://community/display/DOCDT55/Real+Time+Business+Transactions+Feed">Real Time Business Transactions Feed</a> on how to enable this feature. You should set the host and port to the host that runs the Splunk Application and use the default port 4321 unless you have changed it.    </p>
+See <a href="https://community.compuwareapm.com/display/DOCDT55/Real+Time+Business+Transactions+Feed">Real Time Business Transactions Feed</a> on how to enable this feature. You should set the host and port to the host that runs the Splunk Application and use the default port 4321 unless you have changed it.    </p>
 </div>
 
 <div class="section-3"  id="117440771_SplunkApplication-BusinessTransactionDatainSplunk"  >
@@ -229,7 +229,7 @@ All fields are automatically discovered.    </p>
     <h4>Searching for particular Business Transaction Splittings</h4>
 
 <p>
-In the <a href="https://community/display/DOCDT55/Real+Time+Business+Transactions+Feed">Export of Business Transactions</a> splittings are called dimensions. Accordingly you can search for any dimension in splunk by filtering by the specific dimension. e.g. if you export the easyTravel Business Transaction <i class=" ">easyTravel Bookings by Location</i> you can search for locations via an expression like this    </p>
+In the <a href="https://community.compuwareapm.com/display/DOCDT55/Real+Time+Business+Transactions+Feed">Export of Business Transactions</a> splittings are called dimensions. Accordingly you can search for any dimension in splunk by filtering by the specific dimension. e.g. if you export the easyTravel Business Transaction <i class=" ">easyTravel Bookings by Location</i> you can search for locations via an expression like this    </p>
 <div class="confbox programlisting">
             <div class="content">
     <pre><code>sourcetype= pp AND &quot;dimensions.Booking Location&quot; = &quot;*Zurich*&quot;</code></pre>
@@ -314,6 +314,6 @@ In both cases the dynaTrace client must be already running on your local machine
     <h2>Questions &amp; Ideas</h2>
 
 <p>
-If you have questions or ideas for this Splunk Application please post it in our <a href="https://community/display/DTFORUM/Community+Plugins+and+Extensions">Plugin Forum</a>    </p>
+If you have questions or ideas for this Splunk Application please post it in our <a href="https://community.compuwareapm.com/display/DTFORUM/Community+Plugins+and+Extensions">Plugin Forum</a>    </p>
 </div>
 </div>
