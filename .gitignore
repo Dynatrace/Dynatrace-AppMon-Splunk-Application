@@ -13,13 +13,13 @@
 # git has its own built in compression methods
 *.7z
 *.dmg
-*.gz
+
 *.iso
 *.box
-*.jar
+
 *.rar
-*.tar
-*.zip
+
+
 
 # Logs and databases #
 ######################
