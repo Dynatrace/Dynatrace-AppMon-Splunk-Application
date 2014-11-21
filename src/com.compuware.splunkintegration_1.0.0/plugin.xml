@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!-- plugin.xml file written by dynaTrace Client 5.0.0 -->
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="com.compuware.splunkintegration" name="SplunkAlert">
+    <information>
+      <category value="" />
+      <displayname value="Splunk Alert Action" />
+      <description value="This plug-in writes an alert into it's log file which can be easily picked up and handled by Splunk." />
+      <supportlevel value="unsupported" />
+    </information>
+    <configuration>
+      <property key="url" label="URL" type="url" description="The URL to send the alert to" default="http://localhost:4321/alerts" />
+      <property key="AllowUntrustedSSL" label="Allow Untrusted SSL" type="boolean" description="Should an alert also be sent to an untrusted SSL connection" default="" />
+      <property key="UseAuthentication" label="Use Authentication" type="boolean" description="Is Authentication required?" default="" />
+      <property key="AuthenticationUser" label="Authentication User" type="string" description="User for HTTP Basic Authentication" default="" multiline="false" />
+      <property key="AuthenticationPassword" label="Authentication Password" type="password" description="Password for HTTP Basic Authentication" default="" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.action" id="com.compuware.splunkintegration.action" name="Splunk Action">
+    <plugin configid="com.compuware.splunkintegration" class="com.compuware.splunkintegration.SplunkAction" />
+  </extension>
+</plugin>
+
