@@ -1,11 +1,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link type="text/css" rel="stylesheet" href="css/blueprint/liquid.css" media="screen, projection"/>
-    <link type="text/css" rel="stylesheet" href="css/blueprint/print.css" media="print"/>
-    <link type="text/css" rel="stylesheet" href="css/content-style.css" media="screen, projection, print"/>
-    <link type="text/css" rel="stylesheet" href="css/screen.css" media="screen, projection"/>
-    <link type="text/css" rel="stylesheet" href="css/print.css" media="print"/>
 </head>
 
 <body>
@@ -67,7 +62,7 @@ Drill-down to root-cause, export &amp; share with your team    </p>
             </tr>
             <tr>
                 <td rowspan="1" colspan="1"><p>License    </p></td>
-                <td rowspan="1" colspan="1"><p><a href="attachments_5275722_2_dynaTraceBSD.txt">dynatrace BSD</a>    </p>   
+                <td rowspan="1" colspan="1"><p><a href="dynaTraceBSD.txt">dynatrace BSD</a>    </p>   
                 </td>
             </tr>
             <tr>
