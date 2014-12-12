@@ -32,7 +32,7 @@ This Application enables a seamless way to store Business Transactions and Alert
 || Ardeshir Arfaian (initial splunk alert),
 || Peter Kaiser ([Big Data Business Transaction Bridge](https://community.compuwareapm.com/community/display/DL/Big+Data+Business+Transaction+Bridge) used internally by the Splunk Application)
 | License | [dynatrace BSD](dynaTraceBSD.txt)
-| Support [Not Supported ](https://community.compuwareapm.com/community/display/DL/Support+Levels#SupportLevels-Community)
+| Support | [Not Supported ](https://community.compuwareapm.com/community/display/DL/Support+Levels#SupportLevels-Community)
 | Release history | Version 2.1
 | Download | [dynaTrace App for Splunk](APM_dynatrace.tar.gz)
 | | [DynaTrace Splunk Alert Plugin](com.compuware.splunkintegration_1.0.0.jar)
@@ -102,10 +102,10 @@ _Good Luck, you should start seeing data in dynaTrace App for Splunk_
 
 ### Install Dynatrace Splunk Application
 
-Use the Splunk Web UI to install the APM with dynaTrace Splunk Application. You can simply install the [APM with Dynatrace Splunk App](Splunk_Application.html) as is. Once ready the app will begin
+Use the Splunk Web UI to install the APM with dynaTrace Splunk Application. You can simply install the [APM with Dynatrace Splunk App](https://github.com/dynaTrace/Dynatrace-Splunk-Application) as is. Once ready the app will begin
 listening for data on the designated host inside 5 minutes after install.
 
-The Splunk Application contains the [Big Data Business Transaction Bridge](https://community.compuwareapm.com/community/display/DL/Big+Data+Business+Transaction+Bridge) with a specialized flume
+The Splunk Application contains the [Big Data Business Transaction Bridge](https://github.com/dynaTrace/Dynatrace-Big-Data-Business-Transaction-Bridge) with a specialized flume
 configuration. You can edit it by going to _$SPLUNK_HOME/etc/apps/_APM_dynatrace_/bin_. Per default it will listen on port 4321, which you can change. It will write the data to the log directory in
 the application folder.
 
@@ -189,7 +189,7 @@ using the fields shared among them (e.g. the visitId). You can aggregate measure
 
 ### Sending Alerts to Splunk
 
-To send alerts to splunk you need to install the attached [Dynatrace Splunk Alert Plugin](dist/com.compuware.splunkintegration_1.0.0.jar). Once done you can use this plugin to export any alert. Simple
+To send alerts to splunk you need to install the attached [Dynatrace Splunk Alert Plugin](com.compuware.splunkintegration_1.0.0.jar). Once done you can use this plugin to export any alert. Simple
 go to the Incident, switch to the Actions tab and click on _Advanced Configuration_. You can then add the Splunk Action as an Incident Action
 
 ![images_community/download/attachments/117440771/splunk1.png](images_community/download/attachments/117440771/splunk1.png)
