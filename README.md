@@ -102,7 +102,7 @@ _Good Luck, you should start seeing data in dynaTrace App for Splunk_
 
 ### Install Dynatrace Splunk Application
 
-Use the Splunk Web UI to install the APM with dynaTrace Splunk Application. You can simply install the [APM with Dynatrace Splunk App](https://github.com/dynaTrace/Dynatrace-Splunk-Application) as is. Once ready the app will begin
+Use the Splunk Web UI to install the APM with dynaTrace Splunk Application. You can simply install the APM with Dynatrace Splunk App as is. Once ready the app will begin
 listening for data on the designated host inside 5 minutes after install.
 
 The Splunk Application contains the [Big Data Business Transaction Bridge](https://github.com/dynaTrace/Dynatrace-Big-Data-Business-Transaction-Bridge) with a specialized flume
