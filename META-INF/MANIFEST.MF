@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Require-Bundle: com.dynatrace.diagnostics.sdk
+Bundle-Vendor: Compuware Corporation
+Bundle-ClassPath: .,
+ lib/commons-codec-1.6.jar,
+ lib/commons-lang3-3.1.jar,
+ lib/org.apache.commons.jar
+Bundle-Version: 1.0.0
+Bundle-Name: SplunkAlert
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.compuware.splunkintegration;singleton:=true
+
