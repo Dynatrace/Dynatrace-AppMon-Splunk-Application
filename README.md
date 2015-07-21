@@ -21,4 +21,4 @@ This Application enables a seamless way to store Business Transactions and Alert
 
   * Drill-down to root-cause, export & share with your team 
 
-Find further information in the [dynaTrace community](https://community.compuwareapm.com/community/display/DL/Splunk+Application) 
+Find further information in the [dynaTrace community](https://community.dynatrace.com/community/display/DL/Splunk+Application) 
