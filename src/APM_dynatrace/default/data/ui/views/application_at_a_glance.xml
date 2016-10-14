@@ -88,9 +88,9 @@
       <option name="charting.primaryAxisTitle.text"/>
       <option name="charting.secondaryAxis.scale">log</option>
       <drilldown>
-        <link series="tolerating">/app/APM_dynatrace/action_details?form.appdex_val=tolerating&amp;earliest=$earliest$&amp;latest=$latest$</link>
-        <link series="satisfied">/app/APM_dynatrace/action_details?form.appdex_val=satisfied&amp;earliest=$earliest$&amp;latest=$latest$</link>
-        <link series="frustrated">/app/APM_dynatrace/action_details?form.appdex_val=frustrated&amp;earliest=$earliest$&amp;latest=$latest$</link>
+        <link series="tolerating">/app/compuwareapm/action_details?form.appdex_val=tolerating&amp;earliest=$earliest$&amp;latest=$latest$</link>
+        <link series="satisfied">/app/compuwareapm/action_details?form.appdex_val=satisfied&amp;earliest=$earliest$&amp;latest=$latest$</link>
+        <link series="frustrated">/app/compuwareapm/action_details?form.appdex_val=frustrated&amp;earliest=$earliest$&amp;latest=$latest$</link>
       </drilldown>
     </chart>
   </row>
@@ -118,9 +118,9 @@
       <option name="count">10</option>
       <option name="displayRowNumbers">true</option>
       <drilldown>
-        <link series="tolerating">/app/APM_dynatrace/action_details?form.appdex_val=tolerating</link>
-        <link series="satisfied">/app/APM_dynatrace/action_details?form.appdex_val=satisfied</link>
-        <link series="frustrated">/app/APM_dynatrace/action_details?form.appdex_val=frustrated</link>
+        <link series="tolerating">/app/compuwareapm/action_details?form.appdex_val=tolerating</link>
+        <link series="satisfied">/app/compuwareapm/action_details?form.appdex_val=satisfied</link>
+        <link series="frustrated">/app/compuwareapm/action_details?form.appdex_val=frustrated</link>
       </drilldown>
       <option name="charting.axisTitleX.visibility">visible</option>
       <option name="charting.axisTitleY.visibility">visible</option>

@@ -10,12 +10,14 @@ from xml.dom import minidom
 import lxml.etree as ET
 from urllib2 import URLError, HTTPPasswordMgrWithDefaultRealm, HTTPBasicAuthHandler, install_opener, build_opener
 
+# replace DTSERVER with Dynatrace Server IP and REST port
+# replace DASHBOARD with URL encoded Dashboard name
 
-DTSERVER="192.168.1.69:8020"
-DASHBOARD="Database%20Dashboard"
+DTSERVER="changeme:8020"
+DASHBOARD="changeme"
 TIMEFRAME="Last5Min"
-USERNAME="admin"
-PASSWORD="admin"
+USERNAME=os.environ['DTUSER']
+PASSWORD=os.environ['DTPASS']
 xsl_filename = "report.xsl"
 feed_url = "http://"+ DTSERVER + "/rest/management/reports/create/"+ DASHBOARD + "?type=XML&format=XML+Export&filter=tf:" + TIMEFRAME
 
