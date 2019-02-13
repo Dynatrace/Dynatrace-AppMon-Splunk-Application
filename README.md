@@ -1,5 +1,4 @@
-![images_community/download/attachments/25789254/logo_splunk_white_high.png](images_community/download/attachments/25789254/logo_splunk_white_high.png)
-##dynatrace App for Splunk
+## dynatrace App for Splunk
 
 This Application enables a seamless way to store Business Transactions and Alerts in Splunk for further analysis by correlating your Splunk data with dynatrace Business Transaction data.
 
